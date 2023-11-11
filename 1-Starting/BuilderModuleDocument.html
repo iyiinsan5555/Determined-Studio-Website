@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!------------HEAD------------->
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Builder Module</title>
+        <link rel="stylesheet" href="StyleSheetBuilderModule.css">
+        <link rel="stylesheet" href="LuaStyleSheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    </head>
+    <!------------BODY------------->
+    <body>
+
+        <h2 class="Title">Builder Module</h2>
+
+        <p class="Info">
+            Welcome! Builder Module is a module that will help roblox developers to create building animations for models. 
+            Here, i'll teach you how to get started with Builder Module.
+            <span class="Get-Entire-Free-Space"><p class="Note">Note: This documentation is still in progress. If you find any issues, please file an issue on the Module GitHub page issue tracker!</p></span>
+        </p>
+
+        <h2 class="Title">Installation</h2>
+
+        <p>
+            All you need to get the module from this link: <a class="Hidden-Link" href="">Roblox Marketplace Builder Module</a>
+            <span class="Get-Entire-Free-Space">After getting the module, you need to put module inside ReplicatedStorage.</span>
+        </p>
+
+        <h2 class="Title"> Starting Up </h2>
+
+        <p>
+            To create a building animation we need to firts define module in our script(it can work for client and server scripts).
+
+            <div class="Get-Entire-Free-Space">
+                <div class="code-container">
+                    <code>
+                        <span class="custom-variables">local</span> BuilderModule = <span class="classes">require</span>(path.to.your.module) <span class="comments">--You need to create path to module like:</span>
+                    </code>
+                    <code>
+                        <span class="custom-variables">local</span> BuilderModule = <span class="classes">require</span>(<span class="classes">game</span>:<span class="methods">GetService</span>(<span class="strings">"ReplicatedStorage"</span>)[<span class="strings">"iyiinsan5555's_CustomBuilderModule"</span>])
+                    </code>
+                </div>
+            </div>
+            
+        </p>
+
+        <p>
+            After that all you need to get ready your model in script.
+        </p>
+
+        <div class="Get-Entire-Free-Space">
+            <p class="Note">Example script:</p>
+        </div>
+
+        <div class="Get-Entire-Free-Space">
+            <div class="code-container">
+                <code>
+                    <span class="custom-variables">local</span> BuilderModule :Module = <span class="classes">require</span>(<span>game</span>(<span class="strings">"ReplicatedStorage"</span>)[<span class="strings">"iyiinsan5555's_CustomBuilderModule"</span>])
+                </code>
+                <code>
+                    <span class="custom-variables">local</span> ExampleModel :Model = <span class="classes">workspace</span>:<span class="methods">WaitForChild</span>(<span class="strings">"ExampleModel"</span>)
+                </code>
+                <code>
+                    BuilderModule.<span class="methods">MakeModelReadyForBuild</span>(ExampleModel)
+                </code>
+            </div>
+        </div>
+
+        <p>
+            Alright! After making model ready for build. You can create build animation whenever you want by calling this function:
+        </p>
+
+        <div class="Get-Entire-Free-Space">
+            <div class="code-container">
+                <code>
+                    BuilderModule.<span class="methods">Build</span>(BuildingMode :string, Model :Model, WaitTimeBetweenEachPart :number, CustomTweenInfo :TweenInfo)
+                </code>
+            </div>
+        </div>
+
+        <h3 class="Title">Building Modes</h3>
+
+        <p>
+            You can pick one of the building mode by typing
+            <div class="code-container">
+                <code>BuilderModule.<span class="properties">BuildingModes</span>[<span class="strings">"Whatever You Want"</span>]</code>
+            </div>
+        </p>
+
+        <p>
+            The building mode is gonna change building animation.
+        </p>
+
+        <div class="List">
+            <h3>List of building modes:</h3>
+            <p class="Get-Entire-Free-Space">ClassicFadeOut</p>
+            <p class="Get-Entire-Free-Space">ComesFromRandomPosition</p>
+            <p class="Get-Entire-Free-Space">ComesFromRandomPositionWithFade</p>
+            <p class="Get-Entire-Free-Space">GrowthAnimation</p>
+            <p class="Get-Entire-Free-Space">GrowthAnimationWithFade</p>
+            <p class="Get-Entire-Free-Space">HorizontalAnimation</p>
+            <p class="Get-Entire-Free-Space">VerticalAnimation</p>
+            <p class="Get-Entire-Free-Space">ComesFromCenter</p>
+            <p class="Get-Entire-Free-Space">ComesFromCenterWithFade</p>
+            <p class="Get-Entire-Free-Space">ComesFromUp</p>
+            <p class="Get-Entire-Free-Space">ComesFromUpWithFade</p>
+            <p class="Get-Entire-Free-Space">ColorChange</p>
+            <p class="Get-Entire-Free-Space">RotationAnimation</p>
+        </div>
+
+        <div> <!--The container that's gonna carry all videos-->
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="1-Starting\Assets\Videos\ClassicFadeOut.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Classic Fade Out
+                </h4>
+            </div>
+        </div>
+       
+        
+    </body>
+</html>

@@ -1,0 +1,56 @@
+.code-container {
+    background-color: #eeeeee;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.Get-Entire-Free-Space {
+    display: block;
+}
+
+code {
+    font-family: courier, monospace;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: block;
+}
+  
+.custom-variables {
+    color: rgb(223, 0, 0);
+}
+
+.properties {
+    color: rgb(57, 57, 255);
+}
+
+.strings {
+    color: rgb(9, 182, 0);
+}
+
+.methods {
+    color: rgb(255, 209, 3);
+}
+
+.values {
+    color: orange;
+}
+
+.comments {
+color: rgba(0, 0, 0, 0.5)
+}
+
+.classes {
+    color: rgb(0, 162, 255);
+}
