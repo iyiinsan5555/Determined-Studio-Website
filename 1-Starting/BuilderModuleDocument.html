@@ -27,7 +27,9 @@
         <h2 class="Title">Installation</h2>
 
         <p>
-            All you need to get the module from this link: <a class="Hidden-Link" href="">Roblox Marketplace Builder Module</a>
+            All you need to get the module from this link: <a target="_blank" class="Hidden-Link" 
+            href="https://create.roblox.com/marketplace/asset/15324080567/iyiinsan5555sCustomBuilderModule?keyword=iyiinsan5555%27s_CustomBuilderModule&pageNumber=1&pagePosition=">
+            Roblox Marketplace Builder Module</a>
             <span class="Get-Entire-Free-Space">After getting the module, you need to put module inside ReplicatedStorage.</span>
         </p>
 
@@ -268,7 +270,10 @@
         <p>
             <span class="Get-Entire-Free-Space">"CustomTweenInfo" is a TweenInfo properity. The TweenInfo data type stores parameters for <code class="inline-code">TweenService:<span class="methods">Create()</span></code> to specify the behavior of the tween.</span> 
             <span class="Get-Entire-Free-Space">So it's basically customizes animations.</span>
-            <span class="Get-Entire-Free-Space">If you don't know what's TweenInfo is check out this link: TweenInfo for Roblox Developers</span>
+            <span class="Get-Entire-Free-Space">If you don't know what's TweenInfo is check out this link: <a target="_blank"
+                href="https://create.roblox.com/docs/reference/engine/datatypes/TweenInfo">
+                TweenInfo for Roblox Developers</a> 
+            </span>
         </p>
 
         <div class="Get-Entire-Free-Space">
@@ -285,7 +290,7 @@
 
         <div class="code-container">
             <code><span class="custom-variables">local</span> BuilderModule :Module = <span class="classes">require</span>(game:<span class="methods">GetService</span>(<span class="strings">"ReplicatedStorage"</span>)[<span class="strings">"iyiinsan5555's_CustomBuilderModule"</span>])</code>
-            <code><span class="custom-variables">local</span> ExampleModel :Model = <span class="classes">workspace</span><span class="methods">WaitForChild</span>(<span class="strings">"ExampleModel"</span>)</code>
+            <code><span class="custom-variables">local</span> ExampleModel :Model = <span class="classes">workspace</span>:<span class="methods">WaitForChild</span>(<span class="strings">"ExampleModel"</span>)</code>
             <code>BuilderModule.<span class="methods">MakeModelReadyForBuild</span>(ExampleModel)</code>
             <code>task.<span class="classes">wait</span>(5)</code>
             <code>BuilderModule.<span class="methods">Build</span>(CustomBuilderModule.<span class="properties">BuildingModes.ClassicFadeOut</span>, Model, 0, <span class="values">nil</span> )</code>
