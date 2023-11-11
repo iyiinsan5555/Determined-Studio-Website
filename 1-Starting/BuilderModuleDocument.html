@@ -113,9 +113,11 @@
             <p class="Get-Entire-Free-Space">RotationAnimation</p>
         </div>
 
-        <div> <!--The container that's gonna carry all videos-->
+        <h3 class="Title">Here is the videos of all building modes:</h3>
+
+        <div style="margin-top: 25px;"> <!--The container that's gonna carry all videos-->
             <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
-                <video src="1-Starting\Assets\Videos\ClassicFadeOut.mp4" autoplay muted loop>
+                <video src="/1-Starting/Assets/Videos/ClassicFadeOut.mp4" autoplay muted loop>
 
                 </video>
 
@@ -123,8 +125,205 @@
                     Classic Fade Out
                 </h4>
             </div>
+
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="/1-Starting/Assets/Videos/ColorChange.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Color Change
+                </h4>
+            </div>
+
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="/1-Starting/Assets/Videos/ComesFromCenter.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Comes From Center
+                </h4>
+            </div>
+
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="/1-Starting/Assets/Videos/ComesFromCenterWithFade.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Comes From Center with Fade
+                </h4>
+            </div>
+
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="/1-Starting/Assets/Videos/ComesFromRandomPosition.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Comes From Random Position
+                </h4>
+            </div>
+
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="/1-Starting/Assets/Videos/ComesFromRandomPositionWithFade.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Comes From Random Position with Fade
+                </h4>
+            </div>
+
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="/1-Starting/Assets/Videos/ComesFromUp.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Comes From Up
+                </h4>
+            </div>
+
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="/1-Starting/Assets/Videos/ComesFromUpWithFade.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Comes From Up with Fade
+                </h4>
+            </div>
+
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="/1-Starting/Assets/Videos/GrowthAnimation.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Growth Animation
+                </h4>
+            </div>
+
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="/1-Starting/Assets/Videos/GrowthAnimationWithFade.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Growth Animation with Fade
+                </h4>
+            </div>
+
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="/1-Starting/Assets/Videos/HorizontalAnimation.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Horizontal Animation
+                </h4>
+            </div>
+
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="/1-Starting/Assets/Videos/RotationAnimation.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Rotation Animation
+                </h4>
+            </div>
+
+            <div class="Video-Container"> <!--The container that's gonna carry only one video and description-->
+                <video src="/1-Starting/Assets/Videos/VerticalAnimation.mp4" autoplay muted loop>
+
+                </video>
+
+                <h4>
+                    Vertical Animation
+                </h4>
+            </div>
+            
         </div>
-       
+
+        <h3>Model</h3>
+
+        <p>
+            "Model" is gonna be the model that will animation applied.
+        </p>
+
+
+        <h3>WaitTimeBetweenEachPart</h3>
+
+        <p>
+            This properity is the time between each part of model that will animated.
+            --Example video of what WaitTimeBetweenEachPart does.
+        </p>
+
+
+        <h3>CustomTweenInfo</h3>
+
+        <p>
+            <span class="Get-Entire-Free-Space">"CustomTweenInfo" is a TweenInfo properity. The TweenInfo data type stores parameters for <code class="inline-code">TweenService:<span class="methods">Create()</span></code> to specify the behavior of the tween.</span> 
+            <span class="Get-Entire-Free-Space">So it's basically customizes animations.</span>
+            <span class="Get-Entire-Free-Space">If you don't know what's TweenInfo is check out this link: TweenInfo for Roblox Developers</span>
+        </p>
+
+        <div class="Get-Entire-Free-Space">
+            <p class="Note">Example TweenInfo:</p>
+        </div>
+        
+        <div class="code-container">
+            <code><span class="custom-variables">local</span> CustomTweenInfo = TweenInfo.<span class="classes">new</span>(0.1 ,Enum.EasingStyle.Linear ,Enum.EasingDirection.InOut ,0 ,<span class="values">false</span> , 0)</code>
+        </div>
+        
+        <div class="Get-Entire-Free-Space">
+            <p class="Note">Exmaple Script:</p>
+        </div>
+
+        <div class="code-container">
+            <code><span class="custom-variables">local</span> BuilderModule :Module = <span class="classes">require</span>(game:<span class="methods">GetService</span>(<span class="strings">"ReplicatedStorage"</span>)[<span class="strings">"iyiinsan5555's_CustomBuilderModule"</span>])</code>
+            <code><span class="custom-variables">local</span> ExampleModel :Model = <span class="classes">workspace</span><span class="methods">WaitForChild</span>(<span class="strings">"ExampleModel"</span>)</code>
+            <code>BuilderModule.<span class="methods">MakeModelReadyForBuild</span>(ExampleModel)</code>
+            <code>task.<span class="classes">wait</span>(5)</code>
+            <code>BuilderModule.<span class="methods">Build</span>(CustomBuilderModule.<span class="properties">BuildingModes.ClassicFadeOut</span>, Model, 0, <span class="values">nil</span> )</code>
+        </div>
+
+        <h3>Settings</h3>
+        
+        <p>
+            There is only 2 settings that you can modify currently. This number could change in the future.
+            To access the settings you need to type
+        </p>
+
+        <div class="code-container">
+            <code>BuilderModule.<span class="properties">Settings</span>.[<span class="strings">"BuildingModeName"</span>] -- <span class="comments">For now you only can change settings of "ComesFromUp" and "ColorChange".</span></code>
+        </div>
+
+        <div class="Get-Entire-Free-Space">
+            <p class="Note">So to change how height parts come</p>
+        </div>
+
+        <div class="code-container">
+            <code>BuilderModule.<span class="properties">Settings</span>.<span class="properties">ComesFromUp</span>.<span class="properties">HeightAmount</span> = <span class="comments">--Amount You Would Like (Has to be number, Defualt is 50)</span></code>
+        </div> 
+
+        <div class="Get-Entire-Free-Space">
+            <p class="Note">To change defualt color of ColorChange</p>
+        </div>
+
+        <div class="code-container">
+            <code>BuilderModule.<span class="properties">Settings</span>.<span class="properties">StartColor</span>.<span class="properties">HeightAmount</span> = <span class="comments">--Color You Would Like (Has to be Color3, Defualt is Color3.fromRGB(255,255,255))</span></code>
+        </div> 
+        
+        <h3>
+            Contributors
+        </h3>
+
+        <p>iyiinsan5555 (Developed module and website)</p>
+            
         
     </body>
 </html>

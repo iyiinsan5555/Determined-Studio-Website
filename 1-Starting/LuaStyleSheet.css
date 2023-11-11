@@ -26,6 +26,22 @@ code {
     padding-bottom: 1px;
     display: block;
 }
+
+.inline-code {
+    background-color: #eeeeee;
+    display: inline-block;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.5);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 0.5px;
+    padding-left: 0.5px;
+}
   
 .custom-variables {
     color: rgb(223, 0, 0);
