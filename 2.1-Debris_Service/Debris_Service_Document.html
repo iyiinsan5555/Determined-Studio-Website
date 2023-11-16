@@ -28,16 +28,9 @@
                 </li>
 
                 <li class="Navbar_Item">
-                    <a href="#Overview">Overview</a>
+                    <a href="#Module_Settings">Module Settings</a>
                 </li>
 
-                <li class="Navbar_Item">
-                    <a href="#Overview">Overview</a>
-                </li>
-
-                <li class="Navbar_Item">
-                    <a href="#Overview">Overview</a>
-                </li>
 
             </ul>
             
@@ -96,6 +89,126 @@
                 <code> <span class="local">local</span> Custom_Debris_Module = <span class="require">require</span>(ReplicatedStorage:<span class="WaitForChild">WaitForChild</span>(<span class="string">"iyiinsan5555_Debris_Service"</span>))</code>
             </div>
 
+            <p> After requiring module when we want to add a item to debris service we need to call this function.</p>
+
+            <div class="Code_Container">
+                <code> <span class="local">local</span> ReplicatedStorage = <span class="game">game</span>(<span class="string">"ReplicatedStorage"</span>) </code>
+                <code> <span class="local">local</span> Custom_Debris_Module = <span class="require">require</span>(ReplicatedStorage:<span class="WaitForChild">WaitForChild</span>(<span class="string">"iyiinsan5555_Debris_Service"</span>))</code>
+                <button class="One_Line_Enter"></button>
+                <code> Custom_Debris_Module:<span class="method">Add_Item</span>() </code>
+            </div>
+
+            <p> Add_Item() function needs 3 parameters.</p>
+
+            <p>1-Item :Instance (If you want to use all animations you need to give BasePart as a parameter)</p>
+            <p>2-Lifetime :number (The time after item going to get deleted)</p>
+            <p>3-Debris_Type :string (You can find all debris types by typing this in script: "Custom_Debris_Module.Debris_Types")</p>
+
+            <p> Let me show an example:</p>
+
+            <div class="Code_Container">
+                <code> <span class="local">local</span> ReplicatedStorage = <span class="game">game</span>(<span class="string">"ReplicatedStorage"</span>) </code>
+                <code> <span class="local">local</span> Custom_Debris_Module = <span class="require">require</span>(ReplicatedStorage:<span class="WaitForChild">WaitForChild</span>(<span class="string">"iyiinsan5555_Debris_Service"</span>))</code>
+                <button class="One_Line_Enter"></button>
+                <code> Custom_Debris_Module:<span class="method">Add_Item</span>(<span class="workspace">workspace</span>.<span class="Parent">Baseplate</span>, <span class="number">5</span>, Custom_Debris_Module.<span class="Parent">Debris_Types</span>.<span class="Parent">Get_Smaller</span> ) </code>
+            </div>
+
+            <p> Nice! If you read all of it, you know how to add item (with lifetime) to custom debris service.</p>
+
+            <p> Let's learn picking different Debris_Types:</p>
+
+            <div class="Code_Container">
+                <code> <span class="comment">--There is currently 7 debris types.</span> </code>
+                <code> Custom_Debris_Module.<span class="Parent">Debris_Types</span>.<span class="Parent">Delete_Directly</span> </code>
+                <code> Custom_Debris_Module.<span class="Parent">Debris_Types</span>.<span class="Parent">Fade_In</span> </code>
+                <code> Custom_Debris_Module.<span class="Parent">Debris_Types</span>.<span class="Parent">Get_Away_Randomly</span> </code>
+                <code> Custom_Debris_Module.<span class="Parent">Debris_Types</span>.<span class="Parent">Get_Smaller</span> </code>
+                <code> Custom_Debris_Module.<span class="Parent">Debris_Types</span>.<span class="Parent">Parcalara_Ayirma</span> </code>
+                <code> Custom_Debris_Module.<span class="Parent">Debris_Types</span>.<span class="Parent">Patlamali</span> </code>
+                <code> Custom_Debris_Module.<span class="Parent">Debris_Types</span>.<span class="Parent">Rotated</span> </code>
+                <button class="One_Line_Enter"></button>
+                <code> <span class="comment">-- As i teached before you need to type Debris_Type in Add_Item function. Like that:</span> </code>
+                <code> Custom_Debris_Module:<span class="method">Add_Item</span>(<span class="workspace">workspace</span>.<span class="Parent">Baseplate</span>, <span class="number">5</span>, Custom_Debris_Module.<span class="Parent">Debris_Types</span>.<span class="Parent">Parcalara_Ayirma</span> ) </code>
+            </div>
+
+            <p>I think you learned Add_Item function very well. Let's take a look other functions that you can use.</p>
+            <button class="One_Line_Enter"></button>
+            <p style="display: inline-block;"> 1- <div class="On_Line_Code_Container"> <code>Custom_Debris_Service:<span class="method">Get_Item_Count</span>()</code> </div> It doesn't need any parameter. Returns the amount of items that added to debris service. </p>
+            <button class="One_Line_Enter"></button>
+            <p style="display: inline-block;"> 2- 
+                <div class="On_Line_Code_Container">
+                    <code>Custom_Debris_Module:<span class="method">Get_Item_Lifetime</span>(Item :<span class="Instance">Instance</span>)</code>
+                </div> 
+                It need Item as a parameter. Returns the Time_Table (it's a table that has infos like that:
+            <div class="Get_Entire_Space">
+                <div class="Code_Container">
+                    <code>Time_Table = {</code>
+                    <code>Item_Lifetime, --Lifetime of item</code>
+                    <code>Item_Current_Lifetime, --Time that has passed</code>
+                    <code>Remaining_Time --Remaining time to delete item</code>
+                }.</div>
+            </div>
+            <p>And it also prints info like that :</p>  
+            <div class="On_Line_Code_Container">
+                <code> <span class="print">print</span> (<span class="string">"Item's lifetime: "</span>..Item_Lifetime..<span class="string">"s. The time that passed: "</span>..Item_Current_Lifetime..<span class="string">"s. The remaining time: "</span>..Remaining_Time..<span class="string">"s."</span>))</code>
+            </div>
+            </p>
+
+            <p> I think usage of module is done! Let's take a look at module settings.</p>
+
+            <h1 id="Module_Settings">Module Settings</h1>
+
+            <p style="display: inline-block;"> To setup module settings you need to type 
+                <div class="On_Line_Code_Container">
+                    <code> Custom_Debris_Module.<span class="Parent">Settings</span> </code>
+                </div> 
+                in your script.
+            </p>
+
+            <p> There is the videos of about what settings do:</p>
+
+            <div class="Horizantal_Video_Container">
+                
+                <div class="Video_Container">
+                    <video src="" controls></video>
+                    <p>Setting Name</p>
+                </div>
+
+                <div class="Video_Container">
+                    <video src="" controls></video>
+                    <p>Setting Name</p>
+                </div>
+
+                <div class="Video_Container">
+                    <video src="" controls></video>
+                    <p>Setting Name</p>
+                </div>
+
+            </div>
+
+            <p>Here is the how to use settings and what they do:</p>
+
+            <div class="Code_Container">
+                <code> Custom_Debris_Module.<span class="Parent">Settings</span>.<span class="Parent">Defualt_Lifetime</span> = 5 <span class="comment">-- If you don't give Lifetime as a parameter it will get deleted after 5 seconds</span> </code>
+                <button class="One_Line_Enter"></button>
+                <code> Custom_Debris_Module.<span class="Parent">Settings</span>.<span class="Parent">Fade_In</span>.<span>TweenInfo</span> = <span class="TweenInfo">TweenInfo</span>.<span class="new">new</span>(<span class="number">1</span>, <span class="Enum">Enum</span>.<span class="Parent">EasingStyle</span>.<span class="Parent">Linear</span>, <span class="Enum">Enum</span>.<span class="Parent">EasingDirection</span>.<span class="Parent">In</span>, <span class="number">0</span>, <span class="boolen">false</span>, <span class="number">0</span>) <span class="comment">-- TweenInfo that will control Fade_In tween.(I'm not gonna explain what is TweenInfo)</span> </code>
+                <button class="One_Line_Enter"></button>
+                <code> Custom_Debris_Module.<span class="Parent">Settings</span>.<span class="Parent">Get_Smaller</span>.<span>TweenInfo</span> = <span class="TweenInfo">TweenInfo</span>.<span class="new">new</span>(<span class="number">1</span>, <span class="Enum">Enum</span>.<span class="Parent">EasingStyle</span>.<span class="Parent">Linear</span>, <span class="Enum">Enum</span>.<span class="Parent">EasingDirection</span>.<span class="Parent">In</span>, <span class="number">0</span>, <span class="boolen">false</span>, <span class="number">0</span>) <span class="comment">-- TweenInfo that will control Get_Smaller tween.(I'm not gonna explain what is TweenInfo)</span> </code>
+                <button class="One_Line_Enter"></button>
+                <code> Custom_Debris_Module.<span class="Parent">Settings</span>.<span class="Parent">Get_Away_Randomly</span>.<span>TweenInfo</span> = <span class="TweenInfo">TweenInfo</span>.<span class="new">new</span>(<span class="number">1</span>, <span class="Enum">Enum</span>.<span class="Parent">EasingStyle</span>.<span class="Parent">Linear</span>, <span class="Enum">Enum</span>.<span class="Parent">EasingDirection</span>.<span class="Parent">In</span>, <span class="number">0</span>, <span class="boolen">false</span>, <span class="number">0</span>) <span class="comment">-- TweenInfo that will control Get_Away_Randomly tween.(I'm not gonna explain what is TweenInfo)</span> </code>
+                <button class="One_Line_Enter"></button>
+                <code> Custom_Debris_Module.<span class="Parent">Settings</span>.<span class="Parent">Patlamali</span>.<span>Smaller_Tween_TweenInfo</span> = <span class="TweenInfo">TweenInfo</span>.<span class="new">new</span>(<span class="number">1</span>, <span class="Enum">Enum</span>.<span class="Parent">EasingStyle</span>.<span class="Parent">Linear</span>, <span class="Enum">Enum</span>.<span class="Parent">EasingDirection</span>.<span class="Parent">In</span>, <span class="number">0</span>, <span class="boolen">false</span>, <span class="number">0</span>) <span class="comment">-- TweenInfo that will control Patlamali tween.(I'm not gonna explain what is TweenInfo)</span> </code>
+                <button class="One_Line_Enter"></button>
+                <code> Custom_Debris_Module.<span class="Parent">Settings</span>.<span class="Parent">Patlamali</span>.<span>Patlamali_Tween_TweenInfo</span> = <span class="TweenInfo">TweenInfo</span>.<span class="new">new</span>(<span class="number">1</span>, <span class="Enum">Enum</span>.<span class="Parent">EasingStyle</span>.<span class="Parent">Linear</span>, <span class="Enum">Enum</span>.<span class="Parent">EasingDirection</span>.<span class="Parent">In</span>, <span class="number">0</span>, <span class="boolen">false</span>, <span class="number">0</span>) <span class="comment">-- TweenInfo that will control Patlamali tween.(I'm not gonna explain what is TweenInfo)</span> </code>
+                <button class="One_Line_Enter"></button>
+                <code> Custom_Debris_Module.<span class="Parent">Settings</span>.<span class="Parent">Parcalara_Ayirma</span>.<span class="Parent">Min_Size_Item_X</span> = <span class="number">0.5</span> <span class="comment">-- In Parcalara_Ayirma debris type it creates this effect if a part is smaller that a size. This settings setup the min size on X axis.</span> </code>
+                <code> Custom_Debris_Module.<span class="Parent">Settings</span>.<span class="Parent">Parcalara_Ayirma</span>.<span class="Parent">Min_Size_Item_Y</span> = <span class="number">0.5</span> <span class="comment">-- In Parcalara_Ayirma debris type it creates this effect if a part is smaller that a size. This settings setup the min size Y axis.</span> </code>
+                <code> Custom_Debris_Module.<span class="Parent">Settings</span>.<span class="Parent">Parcalara_Ayirma</span>.<span class="Parent">Min_Size_Item_Z</span> = <span class="number">0.5</span> <span class="comment">-- In Parcalara_Ayirma debris type it creates this effect if a part is smaller that a size. This settings setup the min size Z axis.</span> </code>
+                <button class="One_Line_Enter"></button>
+                <code> Custom_Debris_Module.<span class="Parent">Settings</span>.<span class="Parent">Min_Lifetime</span> = <span class="number">0.05</span> <span class="comment">-- The minimum number of seconds before an item is removed</span> </code>
+                <code> Custom_Debris_Module.<span class="Parent">Settings</span>.<span class="Parent">Max_Items</span> = <span class="number">10000</span> <span class="comment">-- The maximum number of items that can be added to the module</span> </code>
+                <code> Custom_Debris_Module.<span class="Parent">Settings</span>.<span class="Parent">FastMode</span> = <span class="boolen">false</span> <span class="comment">-- I highly don't suggest opening this. It could cause bugs. And weird movements but it's still a choice. It works faster for models if you open it. And you can delete things immediately</span> </code>
+            </div>
 
         </main>
 

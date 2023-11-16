@@ -30,7 +30,7 @@
 }
 
 .comment {
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(255, 255, 255, 0.5);
     transition: 0.25s;
 }
 
@@ -147,6 +147,45 @@
     padding-bottom: 15px;
     /* Box Shadow */
     box-shadow: rgba(255, 255, 255, 0.389) 0px 0px 15px;
+}
+
+.On_Line_Code_Container {
+    /* Background Color */
+    background-color: var(--Second_Color);
+    /* Display */
+    display: inline-block;
+    /* Border Settings */
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--Third_Color);
+    /* Margin and Padding */
+    margin-left: 5px;
+    margin-right: 5px;
+
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 1.5px;
+    padding-left: 1.5px;
+    /* Box Shadow */
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 15px;
+    /* Transition Settings */
+    transition: 0.5s;
+}
+
+.On_Line_Code_Container:hover {
+   /* Background Color */
+   background-color: var(--Main_Color);
+   /* Border Settings */
+   border-radius: 2.5px;
+   border-style: solid;
+   border-width: 0.5px;
+   border-color: var(--Font_Color);
+   /* Padding */
+   padding-top: 5px;
+   padding-bottom: 5px;
+   /* Box Shadow */
+   box-shadow: rgba(255, 255, 255, 0.389) 0px 0px 15px;
 }
 
 .Get_Entire_Space {
