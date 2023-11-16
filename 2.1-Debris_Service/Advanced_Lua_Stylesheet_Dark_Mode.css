@@ -1,4 +1,13 @@
-/* GetService(add) and strings(customization) and comments (add) and Strings(customization) */
+:root {
+    --Main_Color: rgb(17, 18, 22);
+    --Second_Color: rgb(43, 45, 51);
+    --Third_Color: rgb(43, 177, 255);
+    --Font_Color: white;
+
+    color: var(--Font_Color);
+}
+
+
 .local, .if, .then, .do, .repeat, .until, .else, .elseif, .end, .for, .in, .return, .break, .continue, .export, .function, .tpye, .typeof, .while,
 .not {
     color: #BF372A;
@@ -72,7 +81,7 @@
 }
 
 .comment:hover {
-    color: rgba(0, 0, 0, 0.75);
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .workspace:hover, .script:hover, .pairs:hover, .require:hover, .game:hover, .Ray:hover, .RaycastParams:hover, .OverlapParams:hover, .Axes:hover, .BrickColor:hover, .bit32:hover, .Color3:hover, .CFrame:hover, .coroutine:hover,
@@ -102,14 +111,14 @@
 
 .Code_Container {
     /* Background Color */
-    background-color: #eeeeee;
+    background-color: var(--Second_Color);
     /* Display */
     display: inline-block;
     /* Border Settings */
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
-    border-color: rgba(0, 0, 0, 0.5);
+    border-color: var(--Third_Color);
     /* Margin and Padding */
     margin-top: 10px;
     margin-bottom: 10px;
@@ -120,24 +129,24 @@
     padding-right: 5px;
     padding-left: 5px;
     /* Box Shadow */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 15px;
     /* Transition Settings */
     transition: 0.5s;
 }
 
 .Code_Container:hover {
     /* Background Color */
-    background-color: #ffffff;
+    background-color: var(--Main_Color);
     /* Border Settings */
     border-radius: 2.5px;
     border-style: solid;
     border-width: 0.5px;
-    border-color: rgba(0, 0, 0, 0.75);
+    border-color: var(--Font_Color);
     /* Padding */
     padding-top: 15px;
     padding-bottom: 15px;
     /* Box Shadow */
-    box-shadow: rgba(0, 0, 0, 0.425) 0px 3px 8px;
+    box-shadow: rgba(255, 255, 255, 0.389) 0px 0px 15px;
 }
 
 .Get_Entire_Space {

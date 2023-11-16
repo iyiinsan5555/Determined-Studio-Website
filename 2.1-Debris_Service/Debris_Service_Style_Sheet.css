@@ -9,6 +9,8 @@
     font-family: "HCo Gotham SSm", Helvetica, Arial, san-serif;;
     color: var(--Font_Color);
 
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -16,6 +18,10 @@ body {
     margin: 0;
     margin-bottom: 2000px;
     padding: 0;
+}
+
+a {
+    color: var(--Third_Color);
 }
 
 body::-webkit-scrollbar {
@@ -128,6 +134,7 @@ main {
     justify-items: center;
     border-radius: 10px;
     border: none;
+    box-shadow: var(--Second_Color) 0px 0px 50px;
 }
 
 .Horizantal_Video_Container::-webkit-scrollbar {
@@ -143,14 +150,37 @@ main {
     border-radius: 5px;
 }
 
-.Horizantal_Video_Container .Video_Container {
-    background-color: yellow;
-    height: 90%;
+.Video_Container {
+    background-color: var(--Main_Color);
+    height: 95%;
     aspect-ratio: 1.5;
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
-    
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: var(--Main_Color) 0px 0px 15px;
+    display: block;
+}
+
+.Video_Container video {
+    width: 85%;
+    aspect-ratio: 1.5;
+    display: block;
+    border-radius: 4px;
+    margin-left: 6.5%;
+    margin-top: 1.5vh;
+    border-color: var(--Second_Color);
+    border-width: 1px;
+    border-style: solid;
+}
+
+.Video_Container p {
+    width: 100%;
+    margin: 0;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 3vh;
 }
 
 #Custom_Debris_Service {

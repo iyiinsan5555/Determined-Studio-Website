@@ -4,7 +4,10 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="Debris_Service_Style_Sheet.css">
+        <link rel="stylesheet" href="Advanced_Lua_Stylesheet_Dark_Mode.css">
+
         <title>Custom Debris Service</title>
     </head>
     
@@ -15,49 +18,26 @@
                 <li class="Navbar_Item">
                     <a href="#Overview">Overview</a>
                 </li>
-                <li class="Navbar_Item">Installation
-
+                
+                <li class="Navbar_Item">
+                    <a href="#Installation">Installation</a>
                 </li>
-                <li class="Navbar_Item">Configuration
 
+                <li class="Navbar_Item">
+                    <a href="#Setup">Setup</a>
                 </li>
-                <li class="Navbar_Item">Cool Modes
 
+                <li class="Navbar_Item">
+                    <a href="#Overview">Overview</a>
                 </li>
-                <li class="Navbar_Item">hi
 
+                <li class="Navbar_Item">
+                    <a href="#Overview">Overview</a>
                 </li>
-                <li class="Navbar_Item">hi
 
+                <li class="Navbar_Item">
+                    <a href="#Overview">Overview</a>
                 </li>
-                <li class="Navbar_Item">hi
-
-                </li>
-                <li class="Navbar_Item">hi
-
-                </li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">Setup</li>
-                <li class="Navbar_Item">Installation</li>
-                <li class="Navbar_Item">Configuration</li>
-                <li class="Navbar_Item">Cool Modes</li>
-                <li class="Navbar_Item">hi</li>
-                <li class="Navbar_Item">hi</li>
-                <li class="Navbar_Item">hi</li>
-                <li class="Navbar_Item">hi</li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">It's something</li>
-                <li class="Navbar_Item">It's something</li>
 
             </ul>
             
@@ -77,19 +57,45 @@
             <p>Let's take a look at animations:</p>
 
             <div class="Horizantal_Video_Container">
+                
                 <div class="Video_Container">
-
+                    <video src="" controls></video>
+                    <p>Video Title</p>
                 </div>
+
                 <div class="Video_Container">
-
+                    <video src="" controls></video>
+                    <p>Video Title</p>
                 </div>
+
                 <div class="Video_Container">
-
+                    <video src="" controls></video>
+                    <p>Video Title</p>
                 </div>
-                <div class="Video_Container">
 
-                </div>
             </div>
+
+            <p> Looks good? </p>
+
+            <p> If you love it let's learn how to install and setup it.</p>
+
+            <h1 id="Installation">Installation</h1>
+
+            <p> Get module from this link: <a href=""> iyiinsan5555_Debris_Service </a></p>
+
+            <p> Or you can search it on toolbox like that: "iyiinsan5555_Debris_Service" and get module.</p>
+
+            <p> I suggest putting module inside ReplicatedStorage. So you can use it on client and server.</p>
+
+            <h1 id="Setup">Setup</h1>
+
+            <p>Alright! Let's open a script (client or server doesn't matter). So first thing first we need to require module to use it. Example of requiring (if you don't know) module:</p>
+
+            <div class="Code_Container">
+                <code> <span class="local">local</span> ReplicatedStorage = <span class="game">game</span>(<span class="string">"ReplicatedStorage"</span>) </code>
+                <code> <span class="local">local</span> Custom_Debris_Module = <span class="require">require</span>(ReplicatedStorage:<span class="WaitForChild">WaitForChild</span>(<span class="string">"iyiinsan5555_Debris_Service"</span>))</code>
+            </div>
+
 
         </main>
 
