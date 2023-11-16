@@ -1,0 +1,161 @@
+:root {
+    --Main_Color: rgb(17, 18, 22);
+    --Second_Color: rgb(43, 45, 51);
+    --Third_Color: rgb(43, 177, 255);
+    --Font_Color: white;
+
+    /* Font Settings */
+    font-size: 16px;
+    font-family: "HCo Gotham SSm", Helvetica, Arial, san-serif;;
+    color: var(--Font_Color);
+
+}
+
+body {
+    background-color: var(--Main_Color);
+    margin: 0;
+    margin-bottom: 2000px;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--Second_Color);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--Third_Color);
+    border-radius: 5px;
+}
+
+main {
+    margin-left: 15vw;
+    padding: 1rem;
+}
+
+.Navbar {
+    width: 15vw;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    transition: all 1s ease;
+}
+
+.Navbar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.Navbar::-webkit-scrollbar-track {
+    background-color: var(--Second_Color);
+}
+
+.Navbar::-webkit-scrollbar-thumb {
+    background-color: var(--Font_Color);
+    border-radius: 2.5px;
+    transition: all 0.25s;
+}
+
+.Navbar::-webkit-scrollbar-thumb:hover {
+    background-color: var(--Third_Color);
+    border-radius: 2.5px;
+    box-shadow: rgba(255, 255, 255, 1) 0px 1px 10px 0px, rgba(255, 255, 255, 1) 0px 2px 10px 2px;
+}
+
+.Navbar_Nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.Navbar_Item {
+    width: 10vw;
+    aspect-ratio: 6;
+    background-color: var(--Second_Color);
+
+    margin-left: 2vw;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    display: flex;
+    align-items: start;
+    justify-content: start;
+
+    border-radius: 5px;
+
+    transition: all 0.5s ease;
+
+}
+
+.Navbar_Item a {
+    text-decoration: none;
+    color: var(--Font_Color);
+
+    width: 100%;
+    height: 100%;
+}
+
+.Navbar_Item:hover {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.Line_Effect {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--Second_Color);
+    border: none;
+}
+
+.Horizantal_Video_Container {
+    background-color: var(--Second_Color);
+    width: 80vw;
+    height: 50vh;
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+    border: none;
+}
+
+.Horizantal_Video_Container::-webkit-scrollbar {
+    height: 1vh;
+}
+
+.Horizantal_Video_Container::-webkit-scrollbar-track {
+    background-color: var(--Second_Color);
+}
+
+.Horizantal_Video_Container::-webkit-scrollbar-thumb {
+    background-color: var(--Font_Color);
+    border-radius: 5px;
+}
+
+.Horizantal_Video_Container .Video_Container {
+    background-color: yellow;
+    height: 90%;
+    aspect-ratio: 1.5;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+#Custom_Debris_Service {
+    width: max-content;
+    font-size: 50px;
+    display: block;
+    margin-left: 25%;
+}
