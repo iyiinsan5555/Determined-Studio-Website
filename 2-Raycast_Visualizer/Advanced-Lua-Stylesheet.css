@@ -1,0 +1,170 @@
+/* GetService(add) and strings(customization) and comments (add) and Strings(customization) */
+.local, .if, .then, .do, .repeat, .until, .else, .elseif, .end, .for, .in, .return, .break, .continue, .export, .function, .tpye, .typeof, .while,
+.not {
+    color: #BF372A;
+    transition: 0.25s;
+}
+
+.boolen, .nil { /* It has bigger font weight then number */
+    color: #F2B705;
+    transition: 0.25s;
+}
+
+.number {
+    color: #F2B705;
+    transition: 0.25s;
+}
+
+.string {
+    color: green;
+    transition: 0.25s;
+}
+
+.comment {
+    color: rgba(0, 0, 0, 0.5);
+    transition: 0.25s;
+}
+
+.workspace, .script, .pairs, .require, .game, .Ray, .RaycastParams, .OverlapParams, .Axes, .BrickColor, .bit32, .Color3, .CFrame, .coroutine,
+.ColorSquence, .CatalogSearchParams, .ColorSequenceKeypoint, .debug, .delay, .DateTime, .DockWidgetPluginGuiInfo, .Enum, .error, .Faces, .File, .Font,
+.FloatCurveKey, .gcinfo, .getfenv, .getmetatable, .Instance, .ipairs, .loadstring, .math, .next, .newproxy, .NumberRange, .NumberSequence, 
+.NumberSequenceKeypoint, .os, .print, .pairs, .pcall, .plugin, .PathWaypoint, .PhysicalProperties, .Rect, .Random, .rawget, .rawlen, .rawset,
+.rawequal, .Region3, .RotationCurveKey, .Region3int16, .setmetatable, .spawn, .Secret, .select, .shared, .setfenv, .Settings, .SharedTable,
+.task, .tostring, .TweenInfo, .tick, .time, .table, .tonumber, .UDim, .UDim2, .utf8, .unpack, .UserSettings, .Vector3, .Vector2, .Vector3int16,
+.Vector2int16, .wait, .warn, .xpcall {
+    color: #49A3F2;
+    transition: 0.25s;
+}
+
+.Data, .Properity, .Name, .Parent, .Value, .Archivable, .ClassName { /* Includes all custom datas */
+    color: #2552B3;
+    transition: 0.25s;
+}
+
+.method, .WaitForChild, .FindFirstChild, .Clone, .Destroy, .GetTags, .GetChildren, .IsPropertyModified, .GetPropertyChangedSignal, .IsA, .AddTag,
+.HasTag, .MoveTo, .Remove, .PivotTo, .Raycast, .Spherecast, .Blockcast, .ScaleTo, .GetActor, .GetPivot, .GetScale, .RemoveTag, .BulkMoveTo, .GetFullName,
+.TranslateBy, .GetAttribute, .IsAncestorOf, .PGSIsEnabled, .SetAttribute, .GetAttributes, .GetBoundingBox, .GetDescendants, .GetExtentsSize,
+.GetPartsInPart, .IsDescendantOf, .JoinToOutsiders, .ClearAllChildren, .GetNumAwakeParts, .GetServerTimeNow, .FindFirstAncestor, .GetRealPhysicsFPS,
+.GetPartsBoundInBox, .GetPartsBoundInRadius, .AddPersistentPlayer, .FindFirstDescendant, .UnjoinFromOutsiders, .GetPersistentPlayers, .ArePartsTouchingOthers,
+.GetPhysicsThrottling, .FindFirstChildOfClass, .FindFirstChildWhichIsA, .RemovePersistentPlayer, .ResetPropertyToDefualt, .FindFirstAncestorOfClass, 
+.FindFirstAncestorWhichIsA, .new {
+    color: #FDDC6D;
+    transition: 0.25s;
+}
+
+/* Animations */ /* Animations */ /* Animations */ /* Animations */ /* Animations */ /* Animations */ /* Animations */ /* Animations */
+.local:hover, .if:hover, .then:hover, .do:hover, .repeat:hover, .until:hover, .else:hover, .elseif:hover, .end:hover, .for:hover,
+.in:hover, .return:hover, .break:hover, .continue:hover, .export:hover, .function:hover, .tpye:hover, .typeof:hover, .while:hover,
+.not:hover {
+    color: rgb(255,0,0);
+}
+
+.boolen:hover, .nil:hover { /* It has bigger font weight then number */
+    color: #ffee00;
+}
+
+.number:hover {
+    color: #ffee00;
+}
+
+.string:hover {
+    color: rgb(4, 251, 4);
+}
+
+.comment:hover {
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.workspace:hover, .script:hover, .pairs:hover, .require:hover, .game:hover, .Ray:hover, .RaycastParams:hover, .OverlapParams:hover, .Axes:hover, .BrickColor:hover, .bit32:hover, .Color3:hover, .CFrame:hover, .coroutine:hover,
+.ColorSquence:hover, .CatalogSearchParams:hover, .ColorSequenceKeypoint:hover, .debug:hover, .delay:hover, .DateTime:hover, .DockWidgetPluginGuiInfo:hover, .Enum, .error:hover, .Faces:hover, .File:hover, .Font:hover,
+.FloatCurveKey:hover, .gcinfo:hover, .getfenv:hover, .getmetatable:hover, .Instance:hover, .ipairs:hover, .loadstring:hover, .math:hover, .next:hover, .newproxy:hover, .NumberRange:hover, .NumberSequence:hover, 
+.NumberSequenceKeypoint:hover, .os:hover, .print:hover, .pairs:hover, .pcall:hover, .plugin:hover, .PathWaypoint:hover, .PhysicalProperties:hover, .Rect:hover, .Random:hover, .rawget:hover, .rawlen:hover, .rawset:hover,
+.rawequal:hover, .Region3:hover, .RotationCurveKey:hover, .Region3int16:hover, .setmetatable:hover, .spawn:hover, .Secret:hover, .select:hover, .shared:hover, .setfenv:hover, .Settings:hover, .SharedTable:hover,
+.task:hover, .tostring:hover, .TweenInfo:hover, .tick:hover, .time:hover, .table:hover, .tonumber:hover, .UDim:hover, .UDim2:hover, .utf8:hover, .unpack:hover, .UserSettings:hover, .Vector3:hover, .Vector2:hover, .Vector3int16:hover,
+.Vector2int16:hover, .wait:hover, .warn:hover, .xpcall:hover {
+    color: rgb(4, 208, 249);
+}
+
+.Data:hover, .Properity:hover, .Name:hover, .Parent:hover, .Value:hover, .Archivable:hover, .ClassName:hover { /* Includes all custom datas */
+    color: #03c2fc;
+}
+
+.method:hover, .WaitForChild:hover, .FindFirstChild:hover, .Clone:hover, .Destroy:hover, .GetTags:hover, .GetChildren:hover, .IsPropertyModified:hover, .GetPropertyChangedSignal:hover, .IsA:hover, .AddTag:hover,
+.HasTag:hover, .MoveTo:hover, .Remove:hover, .PivotTo:hover, .Raycast:hover, .Spherecast:hover, .Blockcast:hover, .ScaleTo:hover, .GetActor:hover, .GetPivot:hover, .GetScale:hover, .RemoveTag:hover, .BulkMoveTo:hover, .GetFullName:hover,
+.TranslateBy:hover, .GetAttribute:hover, .IsAncestorOf:hover, .PGSIsEnabled:hover, .SetAttribute:hover, .GetAttributes:hover, .GetBoundingBox:hover, .GetDescendants:hover, .GetExtentsSize:hover,
+.GetPartsInPart:hover, .IsDescendantOf:hover, .JoinToOutsiders:hover, .ClearAllChildren:hover, .GetNumAwakeParts:hover, .GetServerTimeNow:hover, .FindFirstAncestor:hover, .GetRealPhysicsFPS:hover,
+.GetPartsBoundInBox:hover, .GetPartsBoundInRadius:hover, .AddPersistentPlayer:hover, .FindFirstDescendant:hover, .UnjoinFromOutsiders:hover, .GetPersistentPlayers:hover, .ArePartsTouchingOthers:hover,
+.GetPhysicsThrottling:hover, .FindFirstChildOfClass:hover, .FindFirstChildWhichIsA:hover, .RemovePersistentPlayer:hover, .ResetPropertyToDefualt:hover, .FindFirstAncestorOfClass:hover, 
+.FindFirstAncestorWhichIsA:hover, .new:hover {
+    color: rgb(255, 255, 139);
+}
+
+
+.Code-Container {
+    /* Background Color */
+    background-color: #eeeeee;
+    /* Display */
+    display: inline-block;
+    /* Border Settings */
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.5);
+    /* Margin and Padding */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    /* Box Shadow */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* Transition Settings */
+    transition: 0.5s;
+}
+
+.Code-Container:hover {
+    /* Background Color */
+    background-color: #ffffff;
+    /* Border Settings */
+    border-radius: 2.5px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgba(0, 0, 0, 0.75);
+    /* Padding */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* Box Shadow */
+    box-shadow: rgba(0, 0, 0, 0.425) 0px 3px 8px;
+}
+
+.Get-Entire-Space {
+    display: block;
+}
+
+code {
+    /* Font Settings */
+    font-family: Consolas, monospace;
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+}
+
+.One_Line_Enter {  /* It's a button */
+    /* Color */
+    background-color: rgba(255, 255, 255, 0);
+    /* Size */
+    width: 1px;
+    height: 15px;
+    /* Margin and Padding */
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    /* Border */
+    border: none;
+}
+
+.One_Line_Enter:hover {
+    background-color: rgba(255, 255, 255, 0);
+}

@@ -1,0 +1,132 @@
+:root {
+    /* Font Family Settings */
+    --general_font_family: "conosal";
+    --second_font_family: "arial";
+
+    /* p Font Settings */
+    --p_font_size: 20px;
+
+    /* h1 Font Settings */
+    --h1_font_size: 40px;
+    --h1_font_weight: bolder;
+
+    /* h3 Font Settings */
+    --h3_font_size: 40px;
+    --h3_font_weight: bolder;
+
+}
+
+body {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: var(--general_font_family),var(--second_font_family);
+}
+
+p {
+    font-size: var(--p_font_size);
+}
+
+
+.Title_h1 {
+    display: grid;
+    place-items: center;
+    font-size: var(--h1_font_size);
+    font-weight: var(--h1_font_weight);
+    margin-bottom: 0px;
+}
+
+.Title_h1 h1 {
+    margin-bottom: 0px;
+    margin-top: 35px;
+}
+
+.Title_Description {
+    display: grid;
+    place-items: center;
+    color: rgba(0, 0, 0, 0.3);
+    margin-top: 0px;
+    transition: 0.5s;
+}
+
+.Title_Description:hover {
+    margin-top: 10px;
+}
+
+.Grey_Line {
+    background-color: rgba(128, 128, 128, 0.3);
+    display: block;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border: none;
+    box-shadow: none; /* Add shadow when you have connection (Forgot it :/ ) */
+}
+
+.Title_h3 {
+    display: block;
+    font-size: var(--h3_font_size);
+    font-weight: var(--h3_font_weight);
+    margin-left: 15px;
+}
+
+.Title_h3 h3 {
+    font-size: 35px;
+}
+
+.Title_h4 {
+    display: block;
+    font-size: var(--h3_font_size);
+    font-weight: var(--h3_font_weight);
+    margin-left: 15px;
+}
+
+.Title_h4 h4 {
+    font-size: 30px;
+}
+
+.Title_h1, .Title_h3, .Title_h4 {
+    transition: 0.5s;
+}
+
+.Title_h1:hover, .Title_h3:hover, .Title_h4:hover {
+    margin-left: 2%
+}
+
+
+.Paragraph_Container {
+    margin-left: 1%;
+    transition: 1s;
+}
+
+.Paragraph_Container p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.Video_Container {
+    background-color: red;
+    margin-left: 25%;
+    width: 50%;
+    aspect-ratio: 2;
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.Video_Container video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Video_Container:hover {
+    border-radius: 5px;
+    width: 60%;
+    margin-left: 20%;
+}

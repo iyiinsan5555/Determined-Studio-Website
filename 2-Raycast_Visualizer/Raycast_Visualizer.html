@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Raycast_Visualizer_Stylesheet.css">
+        <link rel="stylesheet" href="Advanced-Lua-Stylesheet.css">
+        <title>Raycast Visualizer</title>
+    </head>
+    <body>
+
+        <div class="Title_h1"> <!--Container to put header1-->
+            <h1>Raycast Visualizer</h1>
+        </div>
+
+        <p class="Title_Description">made by iyiinsan5555</p>
+
+        <button class="Grey_Line"></button>
+
+        <div class="Title_h3">
+            <h3>What does this module?-What is the benefits of this module?</h3>
+        </div>
+        
+        <div class="Paragraph_Container">
+            <p class="Get-Entire-Space">It visualizes raycast or spherecast with advanced settings.</p>
+            <p class="Get-Entire-Space">It's good to show begginners how raycast and shperecast works.</p>
+            <p class="Get-Entire-Space">It's also very good at visualizing raycast and spherecast.</p>
+            <p class="Get-Entire-Space">Note: It doesn't support ray and blockcast</p>
+        </div>
+
+        <!--------------------------------------------------Installation----------------------------------------------------------->
+
+        <div class="Title_h3">
+            <h3>Installation</h3>
+        </div>
+
+        <div class="Paragraph_Container">
+            <p>You need to get module from this line: <a target="_blank" href="">iyiinsan5555_Raycast_Visualizer</a> </p>
+        </div>
+
+        <div class="Paragraph_Container">
+            <p>Put it wherever you want. I suggest you to put it into Replicated Storage. So you can use it in server scripts and client scripts.</p>
+        </div>
+
+        <div class="Video_Container">
+            <video loop muted class="gif" src=""></video> <!--Put a video about how to put it-->
+        </div>
+
+        <!--------------------------------------------------Setup----------------------------------------------------------->
+        
+        <div class="Title_h3">
+            <h3>Setup</h3>
+        </div>
+
+        <div class="Paragraph_Container">
+            <p>First of all you need to require module to use it. Like that:</p>
+        </div>
+
+        <div>
+            <div class="Code-Container">
+                <code><span class="local">local</span> ReplicatedStorage = game:<span class="method">GetService</span>(<span class="string">"ReplicatedStorage"</span>)</code>
+                <code><span class="local">local</span> Raycast_Visualizer = <span class="require">require</span>(ReplicatedStorage:<span class="method">WaitForChild</span>(<span class="string">"iyiinsan5555_Raycast_Visualizer"</span>))</code>
+            </div>
+        </div>
+
+        <!--
+            What does this module do?
+            -It visualizes raycast or spherecast with advanced settings.
+            -It's good to help begginners show how raycast or shperecast works.
+            -This module doesn't support blockcast and ray!
+            
+        -->
+
+        <!--------------------------------------------------Usage------------------------------------------------------------>
+        <div class="Title_h3">
+            <h3>Usage</h3>
+        </div>
+
+        <div class="Paragraph_Container">
+            <p class="Get-Entire-Space">To visualize a raycast we need:</p>
+            <p class="Get-Entire-Space">
+                Origin(Start Position), in Vector3. We also need Direction(Which direction raycast go and how long) in Vector3.
+            </p>
+            <p class="Get-Entire-Space">Let's get Vector3.new(0,5,0) as origin(start) and Vector3.new(100,0,0) as a direction.Code example:</p>
+        </div>
+
+        <div class="Code-Container">
+            <code><span class="local">local</span> ReplicatedStorage = game:<span class="method">GetService</span>(<span class="string">"ReplicatedStorage"</span>)</code>
+            <code><span class="local">local</span> Raycast_Visualizer = <span class="require">require</span>(ReplicatedStorage:<span class="method">WaitForChild</span>(<span class="string">"iyiinsan5555_Raycast_Visualizer"</span>))</code>
+            <button class="One_Line_Enter"></button>
+            <code><span class="local">local</span> Origin = <span class="Vector3">Vector3</span>.<span class="method">new</span>(<span class="number">0</span>,<span class="number">5</span>,<span class="number">0</span>)</code>
+            <code><span class="local">local</span> Direction = <span class="Vector3">Vector3</span>.<span class="method">new</span>(<span class="number">100</span>,<span class="number">0</span>,<span class="number">0</span>)</code>
+        </div>
+
+        <div class="Paragraph_Container">
+            <p>After (belirlemek) origin and direction we can call function. Here is an example of calling function:</p>
+        </div>
+
+        <div class="Code-Container">
+            <code><span class="local">local</span> ReplicatedStorage = game:<span class="method">GetService</span>(<span class="string">"ReplicatedStorage"</span>)</code>
+            <code><span class="local">local</span> Raycast_Visualizer = <span class="require">require</span>(ReplicatedStorage:<span class="method">WaitForChild</span>(<span class="string">"iyiinsan5555_Raycast_Visualizer"</span>))</code>
+            <button class="One_Line_Enter"></button>
+            <code><span class="local">local</span> Origin = <span class="Vector3">Vector3</span>.<span class="method">new</span>(<span class="number">0</span>,<span class="number">5</span>,<span class="number">0</span>)</code>
+            <code><span class="local">local</span> Direction = <span class="Vector3">Vector3</span>.<span class="method">new</span>(<span class="number">100</span>,<span class="number">0</span>,<span class="number">0</span>)</code>
+            <button class="One_Line_Enter"></button>
+            <code>Raycast_Visualizer:<span class="method">VisualizeRaycast</span>(Origin, Direction)</code>
+        </div>
+
+        <div class="Paragraph_Container">
+            <p>As you can see we added this line to call function:</p>
+        </div>
+
+        <div class="Code-Container">
+            <code>Raycast_Visualizer:<span class="method">VisualizeRaycast</span>(Origin, Direction)</code>
+        </div>
+
+        <div class="Paragraph_Container">
+            <p>If you run the game you can see a beam that reperstand[temsil etmek] our raycast.</p>
+        </div>
+
+        <div class="Video_Container">
+            <video loop muted class="gif" src=""></video> <!--Put a video about running game and raycast-->
+        </div>
+
+        <div class="Title_h4">
+            <h4>Info about how to use settings</h4>
+        </div>
+
+        <div class="Paragraph_Container">
+            <p class="Get-Entire-Space">If you did everything right you were able to see a beam (our raycast visualizer).</p>
+            <p class="Get-Entire-Space">Let's learn how to customize our beam!</p>
+            <p class="">To customize beam we need to go to our module settings like that:</p>
+        </div>
+
+        <div class="Code-Container">
+            <code><span class="local">local</span> ReplicatedStorage = game:<span class="method">GetService</span>(<span class="string">"ReplicatedStorage"</span>)</code>
+            <code><span class="local">local</span> Raycast_Visualizer = <span class="require">require</span>(ReplicatedStorage:<span class="method">WaitForChild</span>(<span class="string">"iyiinsan5555_Raycast_Visualizer"</span>))</code>
+            <button class="One_Line_Enter"></button>
+            <code>Raycast_Visualizer.Settings</code>
+        </div>
+
+        <div class="Paragraph_Container">
+            <p>To change color of beam you need to change:</p>
+        </div>
+
+        <div class="Code-Container">
+            <code>Raycast_Visualizer.Settings.BeamColor = <span class="Color3">Color3</span>.<span class="method">fromRGB</span>(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>) <span class="comment">--Feel free to change color</span></code>
+        </div>
+
+        <div class="Paragraph_Container">
+            <p>There is all settings that you can change:</p>
+        </div>
+
+        <div class="Code-Container">
+            <code>Raycast_Visualizer.Settings.BeamColor = <span class="Color3">Color3</span>.<span class="method">fromRGB</span>(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>) <span class="comment">--To change beam color</span> </code>
+            <code>Raycast_Visualizer.Settings.BeamWidth = <span class="number">0.2</span> <span class="comment">--To change beam width</span> </code>
+            <code>Raycast_Visualizer.Settings.InstancesTransparency = <span class="number">0.5</span> <span class="comment">--Manages instance's (parts that module create) transparency</span> </code>
+            <code>Raycast_Visualizer.Settings.InstancesColor = <span class="Color3">Color3</span>.<span class="method">fromRGB</span>(<span class="number">100</span>,<span class="number">100</span>,<span class="number">100</span>) <span class="comment">--Manages instance's color</span> </code>
+            <code>Raycast_Visualizer.Settings.InstancesFolderName = <span class="string">"iyiinsan5555's_RaycastVisualizer"</span> <span class="comment">--Module creates a folder to hold instances. You can change it's name.</span> </code>
+            <code>Raycast_Visualizer.Settings.VisualizationLifeTime = <span class="number">10</span> <span class="comment">-- It manages the time that how long visualization lasts.</span> </code>
+            <code>Raycast_Visualizer.Settings.HitPartEffectTransparency = <span class="number">0.75</span> <span class="comment">--Module creates a part to show what your raycast hit. It changes part's transparency.</span> </code>
+            <code>Raycast_Visualizer.Settings.CreateBillboard = <span class="boolen">true</span> <span class="comment">--If you set it to true, module creates billboards to give info about raycast.</span> </code>
+            <code>Raycast_Visualizer.Settings.BillboardMaxDistance = <span class="number">30</span> <span class="comment">--The distance that you can see billboard.</span> </code>
+        </div>
+
+        <div class="Title_h3">
+            <h3>Shperecast</h3>
+        </div>
+
+        <div class="Paragraph_Container">
+            <p class="Get-Entire-Space">Only difference between raycast and spherecast is radius.</p>
+            <p>Radius is the number that (belirleme) how large sphere should be.</p>
+            <p>Let's see how to use VisualizeSpherecast.</p>
+        </div>
+
+        <div class="Code-Container">
+            <code><span class="local">local</span> ReplicatedStorage = game:<span class="method">GetService</span>(<span class="string">"ReplicatedStorage"</span>)</code>
+            <code><span class="local">local</span> Raycast_Visualizer = <span class="require">require</span>(ReplicatedStorage:<span class="method">WaitForChild</span>(<span class="string">"iyiinsan5555_Raycast_Visualizer"</span>))</code>
+            <button class="One_Line_Enter"></button>
+            <code><span class="local">local</span> Origin = <span class="Vector3">Vector3</span>.<span class="method">new</span>(<span class="number">0</span>,<span class="number">5</span>,<span class="number">0</span>)</code>
+            <code><span class="local">local</span> Direction = <span class="Vector3">Vector3</span>.<span class="method">new</span>(<span class="number">100</span>,<span class="number">0</span>,<span class="number">0</span>)</code>
+            <code> <span class="local">local</span> Radius = <span class="number">2</span> </code>
+            <button class="One_Line_Enter"></button>
+            <code>Raycast_Visualizer:<span class="method">VisualizeSpherecast</span>(Origin, Direction, Radius)</code>
+        </div>
+
+        <div class="Video_Container">
+            <video loop muted class="gif" src=""></video> <!--Put a video about how to put it-->
+        </div>
+
+        <div class="Title_h3">
+            <h3>Contributors</h3>
+        </div>
+
+        <div class="Paragraph_Container">
+            <p>iyiinsan5555 (developed module and website)</p>
+        </div>
+
+    </body>
+</html>
