@@ -31,6 +31,7 @@ p {
 }
 
 
+
 .Title_h1 {
     display: grid;
     place-items: center;
@@ -111,7 +112,7 @@ p {
 
 
 .Video_Container {
-    background-color: red;
+    background-color: transparent;
     margin-left: 25%;
     width: 50%;
     aspect-ratio: 2;

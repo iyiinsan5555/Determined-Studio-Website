@@ -126,6 +126,7 @@ main {
     border: none;
 }
 
+
 .Horizantal_Video_Container {
     background-color: var(--Second_Color);
     width: 80vw;
@@ -151,6 +152,7 @@ main {
     background-color: var(--Font_Color);
     border-radius: 5px;
 }
+
 
 .Video_Container {
     background-color: var(--Main_Color);
